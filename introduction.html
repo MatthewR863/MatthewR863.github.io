@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Introduction</title>
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; margin: 2rem; line-height: 1.6; }
+    header, main, footer { max-width: 1000px; margin-inline: auto; }
+    table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+    th, td { border: 1px solid #ddd; padding: 0.75rem; text-align: left; }
+    th { background: #f6f8fa; }
+    img { max-width: 100%; height: auto; border-radius: 8px; }
+    .img-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+    nav a { color: #0b63f6; text-decoration: none; }
+    nav a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Introduction</h1>
+</header>
+
+<main>
+  <section>
+    <h2>Overview Table</h2>
+    <table>
+      <thead>
+      <tr>
+        <th>Category</th>
+        <th>Details</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>Skills</td>
+        <td>Java, Python, C#, Other Various coding languages</td>
+      </tr>
+      <tr>
+        <td>Abilities</td>
+        <td>Research, Presentation, Critical Thinking, Adaptability</td>
+      </tr>
+      <tr>
+        <td>Education</td>
+        <td>North Carolina A&T, Computer Science, 2027</td>
+      </tr>
+      <tr>
+        <td>Training</td>
+        <td>Multiple Comp classes, It Intern with dmv of nc</td>
+      </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <div class="img-row">
+      <img src="img/img2.jpg" />
+      <img src="img/img3.jpg" />
+    </div>
+  </section>
+
+  <nav>
+    <a href="index.html">Back to Home</a>
+  </nav>
+</main>
+
+<footer>
+  <p>&copy <span id="year"></span> Matthew Reynolds</p>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
