@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Bio</title>
+    <style>
+        body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; margin: 2rem; line-height: 1.6; }
+        header, main, footer { max-width: 800px; margin-inline: auto; }
+        img { max-width: 100%; height: auto; border-radius: 8px; }
+        nav a { color: #0b63f6; text-decoration: none; }
+        nav a:hover { text-decoration: underline; }
+        ul { padding-left: 1.25rem; }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Matthew Reynolds</h1>
+    <h2>Bio</h2>
+    <p>
+        I'm Matthew Reynolds a 20 year old Junior Computer Science Student who attends North Carolina A&T State University.
+    </p>
+</header>
+
+<main>
+    <section>
+        <h2>Photo of me</h2>
+        <img src="img/img1.jpg" alt="Photo" />
+    </section>
+
+    <section>
+        <h2>Courses This Semester</h2>
+        <ul>
+            <li>Math 341</li>
+            <li>Comp 267</li>
+            <li>Comp 322</li>
+            <li>Comp 423</li>
+            <li>Comp 200</li>
+            <li>Comp 285</li>
+        </ul>
+    </section>
+
+    <nav>
+        <a href="introduction.html">Go to Introduction</a>
+    </nav>
+</main>
+
+<footer>
+    <p>&copy <span id="year"></span> Matthew Reynolds</p>
+</footer>
+
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
